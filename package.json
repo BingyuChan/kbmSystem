@@ -1,0 +1,8 @@
+{
+  "name": "kbmsystem",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "qiniu-js": "^3.0.2"
+  }
+}

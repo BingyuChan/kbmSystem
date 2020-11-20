@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QiniuCloud FileUpload</title>
+</head>
+<body>
+<!--enctype="multipart/form-data"-->
+    <form name="uploadForm" action="/doc/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">&nbsp;&nbsp;
+        <input type="submit" value="上传文件">
+    </form>
+    <a href="/doc/list">查看文档列表 ${name} </a>
+
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qiniu-js/3.0.2/qiniu.min.js">-->
+<!--    import * as qiniu from 'qiniu-js'-->
+<!--    const observer = {-->
+<!--        next(res){-->
+<!--            // ...-->
+<!--        },-->
+<!--        error(err){-->
+<!--            // ...-->
+<!--        },-->
+<!--        complete(res){-->
+<!--            // ...-->
+<!--        }-->
+<!--    }-->
+<!--    const config = {-->
+<!--        useCdnDomain: true,-->
+<!--        region: undefined-->
+<!--    };-->
+<!--    const putExtra = {-->
+<!--        fname: "test.png",-->
+<!--        mimeType: "text/plain"-->
+<!--    };-->
+<!--    const observable = qiniu.upload(file, key, token, putExtra, config)-->
+<!--    const subscription = observable.subscribe(observer) // 上传开始-->
+<!--    subscription.unsubscribe() // 上传取消-->
+<!--</script>-->
+</body>
+</html>
